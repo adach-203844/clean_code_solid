@@ -1,6 +1,6 @@
 package pl.ttpsc.solid.isp.contactbook.solution;
 
-public interface EmailSender {
+public interface Dialler {
 
-  void sendEmail();
+  void makeCall();
 }
