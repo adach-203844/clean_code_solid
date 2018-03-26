@@ -6,8 +6,8 @@ import java.util.function.Function;
 
 public class USASpeedLimitFines {
 
-  private Map<String, Integer> speedLimits = new HashMap<>();
-  private Map<String, Function<Integer, Double>> fineFunctions = new HashMap<>();
+  private final Map<String, Integer> speedLimits = new HashMap<>();
+  private final Map<String, Function<Integer, Double>> fineFunctions = new HashMap<>();
 
   public USASpeedLimitFines() {
     speedLimits.put("SC", 0);
@@ -25,7 +25,6 @@ public class USASpeedLimitFines {
 
   public double calcualateFine(String stateCode, int speed) {
 
-    double fine = 0;
     Integer speedLimit = speedLimits.get(stateCode);
     if (speedLimit == null) {
       throw new IllegalArgumentException("No such state.");

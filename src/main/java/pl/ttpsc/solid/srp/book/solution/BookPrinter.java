@@ -4,8 +4,6 @@ import java.util.Map;
 
 public class BookPrinter {
 
-  private int currentPage = 0;
-
   /**
    * Prints specific page.
    */

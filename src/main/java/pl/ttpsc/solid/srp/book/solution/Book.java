@@ -1,16 +1,15 @@
 package pl.ttpsc.solid.srp.book.solution;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class Book {
 
-  private String title;
-  private String author;
-  private String libraryRoomName;
-  private String rowLocator;
-  private int indexOnShelf;
-  private Map<Integer, String> pages;
+  private final String title;
+  private final String author;
+  private final String libraryRoomName;
+  private final String rowLocator;
+  private final int indexOnShelf;
+  private final Map<Integer, String> pages;
 
   public Book(String title, String author, String libraryRoomName, String rowLocator,
       int indexOnShelf, Map<Integer, String> pages) {
